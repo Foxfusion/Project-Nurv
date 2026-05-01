@@ -98,7 +98,7 @@ app.get("/api/logs", async (req, res) => {
        ORDER BY created_at DESC
        LIMIT 20`
         );
-
+1
         res.json(rows);
     } catch (err) {
         res.status(500).json({ error: err.message });
